@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Geeks IT Blog</title>
+  
+  <subtitle>IT Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://gisferrada.github.io/"/>
+  <updated>2018-03-15T07:47:16.245Z</updated>
+  <id>https://gisferrada.github.io/</id>
+  
+  <author>
+    <name>CheyenneBlue</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Conemu를 사용해 봅시다.~~!</title>
+    <link href="https://gisferrada.github.io/2018/03/15/Conemu-1/"/>
+    <id>https://gisferrada.github.io/2018/03/15/Conemu-1/</id>
+    <published>2018-03-15T06:58:15.000Z</published>
+    <updated>2018-03-15T07:47:16.245Z</updated>
+    
+    <content type="html"><![CDATA[<p>많은 분들이 <a href="https://conemu.github.io/en/GuiMacro.html" title="Conemu" target="_blank" rel="noopener">Conemu</a>를 사용하고 계실거라고 생각합니다.<br>저같은 경우는 윈도우 기본 CMD혹은 Powershell이 조금 부족하게 생각될때가 있더군요.<br>git bash쉘을 이용하기도 하고 SSH연결시 사용하는 <a href="https://mobaxterm.mobatek.net/" title="Mobaxterm" target="_blank" rel="noopener">Mobaxterm</a>을 사용하기도 합니다.</p><p>뭐 Tool은 자기가 사용하기에 편한것이 가장 좋다고 생각하는 바입니다. ^^</p><p>저는 AVR을 이용하여 개발을 할때가 종종 있어서 C를 위한 에디터로 VIM을 사용합니다.<br>물론 컴파일은 AVR Studio 혹은 이클립스로 하구요.<br><a href="https://www.vim.org/" title="VIM" target="_blank" rel="noopener">VIM</a>도 GVIM보단 <a href="https://www.cygwin.com/" title="Cygwin" target="_blank" rel="noopener">Cygwin</a> Terminal에서 작업을 하는경우가 많습니다.</p><p><a href="https://www.vim.org/" title="VIM" target="_blank" rel="noopener">VIM</a>과 <a href="https://www.cygwin.com/" title="Cygwin" target="_blank" rel="noopener">Cygwin</a>에 대해선 차차 알아보도록 하구요,<br>이번 포스팅은 <a href="https://conemu.github.io/en/GuiMacro.html" title="Conemu" target="_blank" rel="noopener">Conemu</a>를 활용하여 작업환경을 보다 쾌적(?)하게 하는 방법에 대한 것입니다.</p><p>설치는 매우 간단하니 설명할 것이 없구요, 리눅스에서 많이 사용하는 tilda나 guake처럼 Quake모드를 지원하기 때문에<br>단축키를 사용하여 Slide 시킬수도 있습니다.</p><p>가장 중요한 것이 현재 실행하고 있는 프로그램을 Attach시킬수 있어서 Conemu상에서 아주 많은 작업을 손쉽게 할 수 있습니다.</p><img src="/2018/03/15/Conemu-1/conemu_1.png" title="20180315-Conemu-1"><p>Conemu 활용을 보여드리기 위하여 조금 과하게 설정해 보았습니다. (평소에는 이렇게 까지 하진 않습니다. ^^)</p><p>뮤직비디오나 영화를 보면서 작업을 할 수 있다는 것을 보여주기 위해 모모랜드 데이지양이 수고하고 계시네요.<br>사진이 아니라 <a href="https://mpv.io/" title="MPV" target="_blank" rel="noopener">MPV</a>를 Attach시킨것 입니다.<br>그옆에 <a href="https://www.farmanager.com/" title="Farmanager" target="_blank" rel="noopener">Farmanager</a>를 Attach 시켰습니다. 윈도우에서는 <a href="https://sourceforge.net/projects/mcwin32/" title="Midnight Commander" target="_blank" rel="noopener">Midnight Commander</a>보다 저에게 맞는것 같네요.<br><a href="https://www.farmanager.com/" title="Farmanager" target="_blank" rel="noopener">Farmanager</a>옆에는 <a href="https://conemu.github.io/en/GuiMacro.html" title="Conemu" target="_blank" rel="noopener">Conemu</a> task에 있는 cmd를 붙여 보았구요,<br>하단은 <a href="https://www.cygwin.com/" title="Cygwin" target="_blank" rel="noopener">Cygwin</a> Terminal을 붙여서 Tmux로 분할하여 <a href="https://www.gnu.org/software/octave/" title="Octave" target="_blank" rel="noopener">Octave</a>와 SSH를 저의 맥북과 라즈베리파이에 연결해 보았습니다.<br>저는 <a href="https://www.gnu.org/software/octave/" title="Octave" target="_blank" rel="noopener">Octave</a>를 계산기 대용으로 활용하고 있습니다. 아주 좋은 프로그램인데 저한텐 돼지목에 진주목걸이네요.<br>나중에 포스팅 하겠지만 <a href="https://www.gnu.org/software/octave/" title="Octave" target="_blank" rel="noopener">Octave</a>는 Cygwin에 있는것을 Tmux로 사용할 수도 있고 Window용 Octave-cli를 Attach해도 됩니다.<br><a href="https://www.cygwin.com/" title="Cygwin" target="_blank" rel="noopener">Cygwin</a>에서 설치하는 Octave는 package가 하나도 안깔려 있습니다. 리눅스 혹은 맥에서 Octave package를 설치해보셨다면 얼마나 고된작업인지 아실것입니다.<br>하지만 Window용 <a href="https://www.gnu.org/software/octave/" title="Octave" target="_blank" rel="noopener">Octave</a>는 패키지가 전부 설치되어 있기때문에 상당히 편리합니다.<br>저는 위에서 언급했다시피 단순 계산기 용도이기 때문에 둘다 아주 잘 사용하고 있습니다.</p><img src="/2018/03/15/Conemu-1/conemu_2.png" title="20180315-Conemu-1"><p>실제 제가 사용하는 화면입니다.<br>이것은 <a href="https://www.cygwin.com/" title="Cygwin" target="_blank" rel="noopener">Cygwin</a> Terminal을 Attach시킨것이기 때문에 굳이 <a href="https://conemu.github.io/en/GuiMacro.html" title="Conemu" target="_blank" rel="noopener">Conemu</a>를 사용하지 않아도 되지 않나? 할수도 있지만 사진에서는 보이지 않지만 Tab bar를 사용하여 Tab을 늘려서 다른 프로그램을 실행시킬수 있습니다.</p><p>다음 사진을 보면 이해가 되실 것입니다.<br><img src="/2018/03/15/Conemu-1/conemu_3.png" title="20180315-Conemu-1"></p><p>저는 Cygwin에 zsh와 oh-my-zsh를 사용하고 있습니다.<br>zsh를 사용하면 bash에 비해 많은 편리한 점이 있고,  Powerline도 사용하여 git타고 다닐때 색감이 좋습니다.<br>이 부분역시 다음 포스팅을 통해 알아보도록 하겠습니다.</p><p>Conemu는 Cygwin Terminal을 Attach하지 않아도 zsh를 사용할 수 있습니다.<br>그런데 제가 굳이 Cygwin Terminal을 Attach해서 사용하는 이유는 Cygwin Terminal인 Mintty가 좋아서 입니다.<br>그리고 Conemu에 zsh를 붙여보려 했지만 제대로 되지 않아서 그냥 맘편히 Mintty를 사용하는것 뿐입니다.</p><p>Conemu에서 파생된 <a href="http://cmder.net/" title="Cmder" target="_blank" rel="noopener">Cmder</a>이란 프로그램도 있습니다.<br>그리고 <a href="http://babun.github.io/" title="Babun" target="_blank" rel="noopener">Babun</a>이라는 Windows shell도 있구요.(개코 원숭이랍니다.)<br>뭐가 좋고 뭐가 나쁜것은 없습니다. 자기가 쓰기 편한게 최고 입니다.<br>저같은 경우에는 다 설치해 보고 저에게 맞는것이 Conemu와 Cygwin이기 때문에 이걸 쓰는것 뿐입니다. ^^</p><p>이번 포스팅에서는 <a href="https://conemu.github.io/en/GuiMacro.html" title="Conemu" target="_blank" rel="noopener">Conemu</a>의 활용에 대해 전반적으로 알아 보았구요, 다음엔 <a href="https://conemu.github.io/en/GuiMacro.html" title="Conemu" target="_blank" rel="noopener">Conemu</a>의 설치와 기능설정에 대해 알아보겠습니다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;많은 분들이 &lt;a href=&quot;https://conemu.github.io/en/GuiMacro.html&quot; title=&quot;Conemu&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Conemu&lt;/a&gt;를 사용하고 계실거라고 생각합니다.&lt;br
+      
+    
+    </summary>
+    
+      <category term="Dev" scheme="https://gisferrada.github.io/categories/Dev/"/>
+    
+      <category term="Windows" scheme="https://gisferrada.github.io/categories/Dev/Windows/"/>
+    
+    
+  </entry>
+  
+</feed>
