@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gisferrada.github.io/"/>
-  <updated>2018-03-15T07:47:16.245Z</updated>
+  <updated>2018-03-16T01:30:16.578Z</updated>
   <id>https://gisferrada.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu Software Update가 안될때</title>
+    <link href="https://gisferrada.github.io/2018/03/16/softwareupdate/"/>
+    <id>https://gisferrada.github.io/2018/03/16/softwareupdate/</id>
+    <published>2018-03-16T00:55:24.000Z</published>
+    <updated>2018-03-16T01:30:16.578Z</updated>
+    
+    <content type="html"><![CDATA[<p>현재 우분투 버전은 17.10.1 이 배포되고 있네요.<br>저는 16.04 버전과 17.04 버전을 사용하고 있습니다.</p><p>어느날부터인가 우분투 소프트웨어 업데이트가 안되길래 이상하던 차에 해결방법을 찾아서 포스팅해봅니다.</p><p><a href="https://superuser.com/questions/339537/where-can-i-get-the-repositories-for-old-ubuntu-versions" target="_blank" rel="noopener">https://superuser.com/questions/339537/where-can-i-get-the-repositories-for-old-ubuntu-versions</a><br>읽어보니 새로운 버전이 나오면 그전의 저장소 주소가 old로 바뀌는것 같습니다.</p><p>일단 /etc/apt/sources.list를 열어서 다음을 추가해 줍니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deb http://old-releases.ubuntu.com/ubuntu/ zesty main restricted universe multiverse</span><br><span class="line">deb http://old-releases.ubuntu.com/ubuntu/ zesty-updates main restricted universe multiverse</span><br><span class="line">deb http://old-releases.ubuntu.com/ubuntu/ zesty-security main restricted universe multiverse</span><br></pre></td></tr></table></figure></p><p>변경후 apt-get update 한번 해주시면 됩니다.</p><p>저는 17.04, Codename은 zesty를 사용하고 있습니다.<br>다른 버전을 사용한다면 버전에 맞는 코드네임을 적어주면 됩니다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;현재 우분투 버전은 17.10.1 이 배포되고 있네요.&lt;br&gt;저는 16.04 버전과 17.04 버전을 사용하고 있습니다.&lt;/p&gt;
+&lt;p&gt;어느날부터인가 우분투 소프트웨어 업데이트가 안되길래 이상하던 차에 해결방법을 찾아서 포스팅해봅니다.&lt;/p&gt;
+&lt;p
+      
+    
+    </summary>
+    
+      <category term="Dev" scheme="https://gisferrada.github.io/categories/Dev/"/>
+    
+      <category term="Linux" scheme="https://gisferrada.github.io/categories/Dev/Linux/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Conemu를 사용해 봅시다.~~!</title>
